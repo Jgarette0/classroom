@@ -7,6 +7,7 @@
 </head>
 <body>
 <section>
+
  <div class="container">
   <div class="upper-container">
    <div class="image-container">
@@ -17,61 +18,129 @@
       Lecture room
      </div>
      <div class="classroom-status">
-       Vacant
+       <img src="../../images/icons/close.svg" alt="close">
      </div>
    </div>
   </div>
-  
    <div class="lower-container">
-    <div class="question">
-     Do you want to occupy lecture room?
-    </div>
-     <button class="button-yes">occupy</button>
+     <button class="button-yes">End Class</button>
    </div>
-<style>
- .upper-container{
-  border-left: 1px solid  rgb(22 101 52);
-  border-right: 1px solid  rgb(22 101 52);
- }
- .lower-container{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid  rgb(22 101 52);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
- }
- .question{
-  font-weight: bold;
-  color: #181818;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  margin: 20px;
-  text-align: center;
- }
 
- .button-yes {
+   </section>
+<style>
+
+@media (min-width: 768px) {
+.container{
+ display: flex;
+ align-items: center;
+ border: 1px black solid;
+ height: 100vh;
+}
+.upper-container{
+ display: flex;
+ align-items: flex-start;
+ width: 90%;
+}
+  
+.button-yes {
   cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
-  background-color: #181818;
+  border-radius: 0.375rem;
+  background-color: #DC2626;
   color: #fbfbfb;
   position: relative;
-  font-size: 15px;
-  padding: 15px 30px;
+  font-size: 20px;
+  padding: 13px 24px;
+  height: 100%;
+  width: 100%;
   margin: 20px;
+ font-weight: bolder;
+ border: 3px solid #DC2626;
 }
 
 .button-yes:hover {
-  background-color: #fbfbfb;
-  color: #181818;
-  border: 2px solid #181818;
+  background-color: #FEE2E2;
+  color: #DC2626;
+  border: 3px solid #DC2626;
 }
-</style>
-</section>
-<style>
+
+ .lower-container{
+  width: 10%;
+  z-index: 999;
+  position: fixed;
+  right: 6%;
+  width: 300px;
+ }
+ .lower-container button{
+  font-size: 25px;
+ }
+ .classroom-name{
+  font-size: 60px;
+  text-align: center;
+  font-family:Helvetica, Arial;
+  
+ }
+ .image-container{
+  position: fixed;
+  top:5%;
+  height: 90%;
+
+ }
+ .image-container img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  border-radius:40px;
+  
+ }
+ .detail-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  font-size: 25px;
+  margin-top:5px;
+  position: fixed;
+  right:3%;
+  top:30%;
+ }
+ .classroom-status img{
+   height: 30px;
+   width: 40px;
+   margin-top:-20px;
+  margin-left:-10px;
+ }
+}
+ 
+
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+
+  
+ .button-yes {
+  cursor: pointer;
+  border-radius: 0.375rem;
+  background-color: #DC2626;
+  color: #fbfbfb;
+  position: relative;
+  font-size: 20px;
+  padding: 13px 24px;
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+ font-weight: bolder;
+ border: 3px solid #DC2626;
+}
+
+.button-yes:hover {
+  background-color: #FEE2E2;
+  color: #DC2626;
+  border: 3px solid #DC2626;
+}
+
+
+
 
  .container{
   display: flex;
@@ -107,13 +176,15 @@
   height: 100%;
   width: 100%;
  }
- 
+ .lower-container{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 20px;
+ }
 
-
-</style>
-<style>
-/* Mobile Layout */
-@media (max-width: 767px) {
 
  .container{
   display: flex;
@@ -137,9 +208,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   column-gap: 20px;
-  height: 80px;
+  height: 40px;
   width: 100%;
   font-size: 25px;
   margin-top:5px;
@@ -157,11 +228,17 @@
  }
  .classroom-name{
   font-family: Helvetica, Arial;
-  font-size: 1.5em;
+  font-size: 25px;
   margin-left: 10px;
+  font-variant: small-caps;
  }
  .classroom-status{
   margin-right: 10px;
+  margin-top: -10px ;
+ }
+ .classroom-status img{
+  width:20px;
+  height: 20px;
  }
  .image-container img{
   object-fit: cover;
@@ -172,10 +249,10 @@
 
 
  }
-  
-
-
-
-
 </style>
+
+
+
+
+
 </html>

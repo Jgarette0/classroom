@@ -78,7 +78,6 @@ function getMsg($c_id) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,7 +96,7 @@ function getMsg($c_id) {
 </head>
 <body>
 
-
+<?php include '../includes/navagation-for-log.php';?>
 
         <section>
 <?php
@@ -141,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               echo '<form method="post" action="log-update.php">';
               echo '<button '.getButton($classroomId).' type="submit" name="classroomId" value="' . htmlspecialchars($classroomId) .'">'.getMsg($classroomId).'</button></div>';
               echo '</form>';
-              
+              header("location: log.php");
 
                 /* 
                 echo '<div class="div1" id="modal1">';
@@ -197,7 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo '</div>';
     echo '</div>';
 
-  include '../includes/navagation-for-log.php';
+
 }
 ?>
 
@@ -495,7 +494,7 @@ function setupModalAndDialog(modalId, dialogId) {
  }
  .classroom-name{
   font-family: Helvetica, Arial;
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 10px;
   font-variant: small-caps;
  }

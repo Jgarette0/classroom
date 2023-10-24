@@ -44,9 +44,9 @@ function getQuestion($c_id) {
     $status = $stmt->fetchColumn();
 
     if ($status == "occupied") {
-        return 'Are you done with your classes?';
+        return 'This classroom is occupied already.';
     } elseif ($status == "vacant") {
-        return 'Do You want to use this classroom?';
+        return 'Do you want to use this classroom?';
     } else {
         // Handle the case when the status is neither 'occupied' nor 'vacant'
         return '<img src="unknown.svg" alt="Unknown Icon">';
@@ -54,6 +54,35 @@ function getQuestion($c_id) {
 }
 
 ?>
+
+<?php
+require_once "includes/dbh.inc.php";
+
+// Function to get the icon HTML based on the classroom status
+function getHide($c_id) {
+    global $pdo; // Access the global database connection
+
+    // Query the status for the specified c_id
+    $query = "SELECT status FROM classroom WHERE c_id = :c_id";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(':c_id', $c_id);
+    $stmt->execute();
+
+    // Fetch the status
+    $status = $stmt->fetchColumn();
+
+    if ($status == "occupied") {
+        return 'style="display: none;"';
+    } elseif ($status == "vacant") {
+        return '';
+    } else {
+        // Handle the case when the status is neither 'occupied' nor 'vacant'
+        return '<img src="unknown.svg" alt="Unknown Icon">';
+    }
+}
+
+?>
+
 
 
   <main class="main">
@@ -80,11 +109,11 @@ function getQuestion($c_id) {
             </div>
             <div class="display-buttons">
               <form method="post" action="log/log.php">
-                <button class="btn-yes" type="submit" name="classroomId" value="1">
+                <button class="btn-yes" type="submit" name="classroomId" value="1" <?php echo getHide(1);   ?>>
                   Yes
                 </button>
               </form>
-              <button class="noway">
+              <button class="noway"<?php echo getHide(1);?>>
                 No
               </button>
             </div>
@@ -113,11 +142,11 @@ function getQuestion($c_id) {
       </div>
       <div class="display-buttons">
       <form method="post" action="log/log.php">
-                <button class="btn-yes" type="submit" name="classroomId" value="2">
+                <button class="btn-yes" type="submit" name="classroomId" value="2"<?php echo getHide(2);   ?>>
                   Yes
                 </button>
               </form>
-        <button class="noway">No</button>
+        <button class="noway"<?php echo getHide(2);?>>No</button>
       </div>
       </div>
     </dialog>
@@ -143,11 +172,11 @@ function getQuestion($c_id) {
       </div>
       <div class="display-buttons">
       <form method="post" action="log/log.php">
-                <button class="btn-yes" type="submit" name="classroomId" value="3">
+                <button class="btn-yes" type="submit" name="classroomId" value="3"<?php echo getHide(3);   ?>>
                   Yes
                 </button>
               </form>
-        <button class="noway">No</button>
+        <button class="noway"<?php echo getHide(3);   ?>>No</button>
       </div>
       </div>
     </dialog>

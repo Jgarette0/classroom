@@ -1,0 +1,123 @@
+
+:root {
+ --dark-color: #171717;
+ --light-color: #fafafa;
+}
+
+body{
+ margin: 0;
+ font-family:Arial, Helvetica, sans-serif;
+ height: 2000px;
+ background-color: var(--light-color);
+}
+
+.navbar {
+ overflow: hidden;
+ transition: top 0.3s;
+ position: fixed;
+ top: 0;
+ width: 100%;
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: center;
+ justify-content: flex-start;
+ background-color:var(--light-color);
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ z-index: 300;
+
+}
+
+.navbar a {
+ float: right;
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 8px 4px;
+ text-decoration: none;
+ box-sizing: border-box;
+ overflow: hidden;
+}
+
+.content {
+ padding: 15px;
+ margin-top: 60px;
+
+}
+#profileBtn{
+ border:none;
+ background-color: transparent;
+ cursor: pointer;
+}
+
+.account-list{
+ margin: auto;
+ color: var(--dark-color);
+ display: flex;
+ justify-content: flex-end;
+ flex-direction: column;
+ 
+}
+
+#theDialog{
+ background-color: var(--dark-color);
+ z-index: 100;
+ max-width: 80%;
+ margin-left: auto;
+ margin-right: 0;
+ margin-bottom: 0;
+ margin-top: 40px;
+ border:none;
+ border-radius: 10px;
+}
+
+.account-list button{
+ background-color: var(--dark-color);
+ color: #E5E1E1;
+ border-radius: 5px;
+ border:none;
+ font-family: 'Roboto', sans-serif;;
+ padding: 4px 6px;
+ margin-top: 5px;
+ text-align: center;
+ cursor: pointer;
+}
+.account-list button:hover{
+ background-color: var(--light-color);
+ transition: ease .3s;
+ color: var(--dark-color);
+}
+.account-list button:active{
+ background-color:var(--light-color);
+ transition: ease .3s;
+ color: var(--dark-color);
+}
+#acc1{
+ padding-right:22px ;
+ 
+}
+#acc3{
+ padding-right:16px ;
+}
+.submits{
+ border: none;
+ background-color: transparent;
+ cursor: pointer;
+ margin-left: -51px;
+ position: absolute;
+ border-left: 1px solid black;
+ height: 32px;
+}
+#search{
+ padding: 8px 31px;
+ border-radius: 10px;
+ border: 1px solid black;
+ margin: none;
+ background-color: transparent;
+}
+
+
+
+
+
+
+

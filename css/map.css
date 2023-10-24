@@ -1,0 +1,170 @@
+
+
+:root {
+  --dark-color: #171717;
+  --light-color: #fafafa;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #fbfbfb;
+  justify-content: center;
+  border-radius: 5px;
+  position: fixed;
+  right: 10px;
+  bottom: 10%;
+}
+
+.value {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: #181818;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.value:not(:active):hover,
+.value:focus {
+  background-color: #e3f6e1;
+}
+
+.value:focus,
+.value:active {
+  background-color: #e3f6e1;
+  outline: none;
+}
+
+.value::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 5px;
+  height: 80%;
+  background-color: #02b775;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.value:focus::before,
+.value:active::before {
+  opacity: 1;
+}
+
+.value img {
+  width: 15px
+}
+
+.input:hover > :not(.value:hover) {
+  transition: 300ms;
+  filter: blur(1px);
+  transform: scale(0.95,0.95);
+}
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+  /* Add your mobile layout styles here */
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    background-color: #fbfbfb;
+    justify-content: center;
+    border-radius: 5px;
+    position: fixed;
+    right: 10px;
+    bottom: 30%;
+  }
+
+.map-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  }
+
+  .map {
+    border: none;
+    border-radius: 20px;
+    background-color:var(--dark-color);
+    color: var(--light-color);
+    position: fixed;
+    bottom: 0;
+    transition: bottom .3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 90px;
+    width: 86px;
+    height: 39px;
+    font-weight: bold;
+    padding: 11px 19px;
+  }
+ .map:active{
+    transition: ease .2s;
+    background-color: #c4b8b8;
+  }
+  .map img{
+    height: 24px;
+    width: 24px;
+    margin-left:3px;
+    margin-top: -4px;
+  }
+
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  /* Add your desktop layout styles here */
+  
+  .map-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+        background-color:var(--dark-color);
+    color: var(--light-color);
+  
+  }
+  
+  
+  .map {
+    border: none;
+    border-radius: 20px;
+    background-color:var(--dark-color);
+    color: var(--light-color);
+    position: fixed;
+    bottom: 0;
+    transition: bottom .3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 75px;
+    width: 86px;
+    height: 39px;
+    font-weight: bold;
+    padding: 11px 19px;
+    cursor: pointer;
+  }
+  .map:hover{
+    transition: ease .3s;
+    background-color: #2b2b2b;
+  }
+  .map img{
+    height: 24px;
+    width: 24px;
+    margin-left:3px;
+    margin-top: -4px;
+    
+  }
+
+}
+
+

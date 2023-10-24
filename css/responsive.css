@@ -1,0 +1,19 @@
+:root {
+  --dark-color: #171717;
+  --light-color: #fafafa;
+}
+/* Mobile Layout */
+@media (max-width: 767px) {
+  /* Add your mobile layout styles here */
+  .login-container{
+    margin-top: 100px;
+  }
+  
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  /* Add your desktop layout styles here */
+
+
+}

@@ -249,7 +249,6 @@ function setupModalAndDialog(modalId, dialogId) {
 .container{
  display: flex;
  align-items: center;
- border: 1px black solid;
  height: 100vh;
 }
 .upper-container{

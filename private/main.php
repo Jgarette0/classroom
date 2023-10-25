@@ -108,7 +108,7 @@ function getHide($c_id) {
             <?php echo getQuestion(1);   ?>
             </div>
             <div class="display-buttons">
-              <form method="post" action="log/log.php">
+              <form method="post" action="../log/log.php">
                 <button class="btn-yes" type="submit" name="classroomId" value="1" <?php echo getHide(1);   ?>>
                   Yes
                 </button>
@@ -141,7 +141,7 @@ function getHide($c_id) {
       <?php echo getQuestion(2);   ?>
       </div>
       <div class="display-buttons">
-      <form method="post" action="log/log.php">
+      <form method="post" action="../log/log.php">
                 <button class="btn-yes" type="submit" name="classroomId" value="2"<?php echo getHide(2);   ?>>
                   Yes
                 </button>
@@ -171,7 +171,7 @@ function getHide($c_id) {
       <?php echo getQuestion(3);   ?>
       </div>
       <div class="display-buttons">
-      <form method="post" action="log/log.php">
+      <form method="post" action="../log/log.php">
                 <button class="btn-yes" type="submit" name="classroomId" value="3"<?php echo getHide(3);   ?>>
                   Yes
                 </button>

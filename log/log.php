@@ -51,7 +51,7 @@
                       echo '<div class="container">';
                       echo '<div class="upper-container">';
                       echo '<div class="image-container">';
-                      echo '<img src="../images/classroom/classroom.jpg" alt="classroom"></div>';
+                      echo '<img src="../images/classroom/classroom'.$classroomId.'.jpg" alt="classroom"></div>';
                       echo '<div class="detail-container">';
                       echo '<div class="classroom-name">' . htmlspecialchars($row["classroomName"]) .'</div>';
                       echo '<div class="classroom-status">'.getIconHTML($classroomId).'</div>';

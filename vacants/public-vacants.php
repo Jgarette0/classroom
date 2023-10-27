@@ -34,7 +34,7 @@
     foreach ($results as $row) {
       echo '<main class="main">';
       echo '<div class="div1" id="modal1">';
-      echo '<div class="diva"><img src="../images/classroom/classroom'./* htmlspecialchars($row["c_id"]).*/ '.jpg" alt="example" class="img1"></div>';
+      echo '<div class="diva"><img src="../images/classroom/classroom'. htmlspecialchars($row["c_id"]). '.jpg" alt="example" class="img1"></div>';
       echo '<div class="divb">';
       echo '<div class="classroom-name">' . htmlspecialchars($row["classroomName"]) . '</div>';
       echo '<div>';

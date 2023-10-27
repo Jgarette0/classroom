@@ -87,7 +87,7 @@ function getHide($c_id) {
 
   <main class="main">
       <div class="div1" id="modal1">
-        <div class="diva"><img src="../images/classroom/classroom.jpg" alt="example" class="img1">
+        <div class="diva"><img src="../images/classroom/classroom1.jpg" alt="example" class="img1">
         </div>
         <div class="divb">
           <div class="classroom-name">Lecture room</div>
@@ -123,7 +123,7 @@ function getHide($c_id) {
 
       
   <div class="div1" id="modal2">
-    <div class="diva"><img src="../images/classroom/classroom.jpg" alt="example" class="img1"></div>
+    <div class="diva"><img src="../images/classroom/classroom2.jpg" alt="example" class="img1"></div>
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
@@ -154,7 +154,7 @@ function getHide($c_id) {
 
 
   <div class="div1" id="modal3">
-    <div class="diva"><img src="../images/classroom/classroom.jpg" alt="example" class="img1"></div>
+    <div class="diva"><img src="../images/classroom/classroom3.jpg" alt="example" class="img1"></div>
     <div class="divb">
       <div class="classroom-name">TVL room</div>
       <div class="status">

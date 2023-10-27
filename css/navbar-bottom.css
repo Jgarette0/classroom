@@ -1,7 +1,7 @@
 :root {
   --day-background-color: #fbfbfb;
-  --day-text-color: #181818; 
-  --night-background-color: #181818; 
+  --day-text-color: #161616; 
+  --night-background-color: #161616; 
   --night-text-color: #fbfbfb;
  }
 
@@ -86,7 +86,7 @@
 
 
 .radio-label {
-  color: #181818;
+  color: var(--day-text-color);
   transition: 0.375s ease;
   text-align: center;
   font-size: 11px;

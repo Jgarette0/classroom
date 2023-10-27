@@ -1,9 +1,11 @@
 :root {
-  --dark-color: #171717;
-  --light-color: #fafafa;
-}
+  --day-background-color: #fbfbfb;
+  --day-text-color: #181818; 
+  --night-background-color: #181818; 
+  --night-text-color: #fbfbfb;
+ }
 body{
-  background-color: var(--light-color);
+  background-color: var(--day-background-color);
 }
 .main {
   display: flex;
@@ -47,7 +49,7 @@ body{
   overflow: hidden;
   font-family: 'Roboto', sans-serif;;
   font-weight: bold;
-  color:var(--dark-color);
+  color:var(--day-text-color);
 }
 
 .diva{
@@ -124,7 +126,7 @@ body{
   top: 6%;
   left: 90%;
   transform: translateX(-50%);
-  color: var(--light-color);
+  color: var(--night-text-color);
   padding: 5px;
   border-radius: 25%; /* If you want to make the icon circular */
   z-index: 1; /* Ensure the icon is above the image */
@@ -138,8 +140,8 @@ body{
   top: 20%;
   left: 90%;
   transform: translateX(-50%);
-  background-color:rgb(54, 54, 54);
-  color: var(--light-color);
+  background-color:var(--night-background-color);
+  color: var(--night-text-color);
   padding: 7px 10px;
   border-radius: 8px; /* If you want to make the icon circular */
   z-index: 1; /* Ensure the icon is above the image */
@@ -180,7 +182,7 @@ body{
 .displays dialog{
   height: 150px;
   width: 250px;
-  background-color: #fbfbfb;
+  background-color: var(--day-background-color);
   border-radius: 20px;
   border: none;
   outline: none;
@@ -226,17 +228,17 @@ body{
     }
     .display-buttons button{
       font-size: 15px;
-      border: 1px solid black;
+      border: 1px solid var(--night-background-color);
       border-radius:20px;
       padding: 12px 35px;
       outline:none;
       cursor: pointer;
-      background-color: #181818;
+      background-color:var(--night-background-color);
       color:#fbfbfb;
     }
     .display-buttons button:hover{
       background-color: #fbfbfb;
-      color:#181818;
+      color:var(--day-text-color);
     }
   
   

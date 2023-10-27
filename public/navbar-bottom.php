@@ -5,7 +5,7 @@
     <span class="radio-tile">
      <input class="radio-input" type="radio" name="engine">
      <a href="classroom.php">
-      <img src="images/icons/classroom-dark.svg" alt="Classroom">
+      <img src="images/icons/classroom-dark.svg"class="classroom" alt="Classroom">
       <span class="radio-label" >Classroom</span>
      </a>
     </span>
@@ -14,14 +14,14 @@
     <span class="radio-tile">
     <input checked="" class="radio-input" type="radio" name="engine">
     <a href="">
-     <img src="images/icons/home-active.svg" alt="">
+     <img src="images/icons/home-active.svg"class="home" alt="">
      <span class="radio-label"style="color: #00a669;">Home</span>
     </a>
     </span>
    </label>
    <label>
     <span class="radio-tile">
-    <input class="radio-input" type="radio" name="engine">
+    <input class="radio-input" type="radio"class="classroom" name="engine">
      <a href="vacants/public-vacants.php">
      <img src="images/icons/vacant-dark.svg" alt="">
     <span class="radio-label">Vacants</span>

@@ -8,12 +8,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/navbar-top.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/navbar-bottom.css">
 <link rel="stylesheet" href="css/map.css">
-
 
 </head>
 <body>
@@ -27,4 +26,5 @@
 <script src="js/main.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/user.js"></script>
+<script src="js/dark-light-mode.js"></script>
 </html>

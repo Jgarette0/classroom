@@ -1,11 +1,17 @@
-
+:root {
+  --day-background-color: #fbfbfb;
+  --day-text-color: #181818; 
+  --night-background-color: #181818; 
+  --night-text-color: #fbfbfb;
+ }
 body {
-  background-color:#181818 !important;
+  background-color:var( --night-background-color) !important;
   margin: 0;
   padding: 0;
+  color: var(--day-text-color);
   }
 
-
+  
 
    /* background-image: url('../../images/cc.svg'); */
   
@@ -53,17 +59,17 @@ body {
       .row1{
       width: 110px;
       margin-left: 27px;
-      border: 1px solid #fbfbfb;
+      border: 1px solid var(--night-text-color);
       }
       .row2{
       width: 730px;
       height: 100px;
       margin-top: 50px;
-      border-top: 1px solid #fbfbfb;
+      border-top: 1px solid var(--night-text-color);
       }
       .row3{
         width: 110px;
-        border: 1px solid #fbfbfb;
+        border: 1px solid var(--night-text-color);
       }
       .col2{
         display: flex;
@@ -84,37 +90,39 @@ body {
       }
       .side-alley{
         width: 25px;
-        border: 1px solid #fbfbfb;
+        border: 1px solid var(--night-text-color);
         height:237.5px;
       }
       /*this is the classroom layout */
       .side-classroom{
         height: 75px;
         width: 105px;
-        border:1px solid #fbfbfb;
+        border:1px solid var(--night-text-color);
+        
       }
       .stairs-classroom{
         height: 108px;
         width: 79px;
-        border:1px solid #fbfbfb;
+        border:1px solid var(--night-text-color);
+        
       }
       .stairs-side{
         margin-top: 17px;
         height: 50px;
         width: 50px;
-        border:1px solid #fbfbfb;
+        border:1px solid var(--night-text-color);
         display: flex;
         flex-direction: row;
-        border:1px  solid #fbfbfb;
+        border:1px  solid var(--night-text-color);
         margin-bottom: 1px;
       }
       .stairs-step1{
           width: 20px;
-          border-right:1px  solid #fbfbfb;
+          border-right:1px  solid var(--night-text-color);
       
       }
       .stairs-step2{
-        border-top:2px  solid #fbfbfb;
+        border-top:2px  solid var(--night-text-color);
         height: 50%;
         margin-top: 47%;
         width: 30px;
@@ -132,11 +140,11 @@ body {
       .main-col2{
         height: 20px;
         width: 100%;
-        border-bottom: 1px #fbfbfb solid;
+        border-bottom: 1px var(--night-text-color) solid;
       }
       .main-classrooms1{
         width: 100%;
-        border: 1px #fbfbfb solid;
+        border: 1px var(--night-text-color) solid;
         height: 100%;
         margin-right: 48px;
         display: flex;
@@ -144,7 +152,7 @@ body {
       }
       .main-classrooms2{
         width: 100%;
-        border: 1px #fbfbfb solid;
+        border: 1px var(--night-text-color) solid;
         height: 100%;
         margin-left: 48px;
         display: flex;
@@ -153,13 +161,13 @@ body {
         width:100%;
         height:100%;
        
-        border:1px solid #fbfbfb;
+        border:1px solid var(--night-text-color);
       }
       
       .stairs-classroom2{
         height: 108px;
         width: 79px;
-        border:1px solid #fbfbfb;
+        border:1px solid var(--night-text-color);
         margin-left: 30px;
       }
       
@@ -167,33 +175,25 @@ body {
         margin-top: 17px;
         height: 50px;
         width: 50px;
-        border:1px solid #fbfbfb;
+        border:1px solid var(--night-text-color);
         display: flex;
         flex-direction: row;
-        border:1px  solid #fbfbfb;
+        border:1px  solid var(--night-text-color);
         margin-bottom: 1px;
         margin-left: 60px;
       }
       .stairs-step1a{
-        border-top:2px  solid #fbfbfb;
+        border-top:2px  solid var(--night-text-color);
         height: 50%;
         margin-top: 47%;
         width: 30px;
       }
       .stairs-step2b{
         width: 20px;
-        border-left:1px  solid #fbfbfb;
+        border-left:1px  solid var(--night-text-color);
       }
       
-      .blank{
-        width: 100%;
-        height: 100%;
-        background-color: rgb(153, 204, 153);
-        cursor: pointer;
-      }
-     .blank:hover{
-        background-color: rgb(95, 204, 95);
-      }
+      
  
       ::-webkit-scrollbar {
         width: 0.1em;
@@ -250,17 +250,17 @@ body {
     .row1{
     width: 12%;
     margin-left: 3.5%;
-    border: 1px solid #fbfbfb;
+    border: 1px solid var(--night-text-color);
     }
     .row2{
     width: 85%;
     height: 55%;
     margin-top: 5%;
-    border-top: 1px solid #fbfbfb;
+    border-top: 1px solid var(--night-text-color);
     }
     .row3{
       width: 12%;
-      border: 1px solid #fbfbfb;
+      border: 1px solid var(--night-text-color);
     }
     .col2{
       display: flex;
@@ -281,39 +281,39 @@ body {
     }
     .side-alley{
       width: 20%;
-      border: 1px solid #fbfbfb;
+      border: 1px solid var(--night-text-color);
       height:100%;
     }
     /*this is the classroom layout */
     .side-classroom{
       height: 100%;
       width: 95%;
-      border:1px solid #fbfbfb;
+      border:1px solid var(--night-text-color);
       margin-left: 5%;
     }
     .stairs-classroom{
       height: 61%;
       width: 72.5%;
-      border:1px solid #fbfbfb;
+      border:1px solid var(--night-text-color);
   
     }
     .stairs-side{
       margin-top: 15%;
       height: 45%;
       width: 45%;
-      border:1px solid #fbfbfb;
+      border:1px solid var(--night-text-color);
       display: flex;
       flex-direction: row;
-      border:1px  solid #fbfbfb;
+      border:1px  solid var(--night-text-color);
       margin-bottom: 1px;
     }
     .stairs-step1{
         width: 30%;
-        border-right:1px  solid #fbfbfb;
+        border-right:1px  solid var(--night-text-color);
     
     }
     .stairs-step2{
-      border-top:5px  solid #fbfbfb;
+      border-top:5px  solid var(--night-text-color);
       height: 50%;
       margin-top: 47%;
       width: 70%;
@@ -331,11 +331,11 @@ body {
     .main-col2{
       height: 25%;
       width: 100%;
-      border-bottom: 1px rgb(255, 255, 255) solid;
+      border-bottom: 1px var(--night-text-color) solid;
     }
     .main-classrooms1{
       width: 100%;
-      border: 1px rgb(255, 255, 255) solid;
+      border: 1px var(--night-text-color)solid;
       height: 100%;
       margin-right:7%;
       display: flex;
@@ -343,7 +343,7 @@ body {
     }
     .main-classrooms2{
       width: 100%;
-      border: 1px rgb(255, 255, 255) solid;
+      border: 1px var(--night-text-color) solid;
       height: 100%;
       margin-left:7%;
       display: flex;
@@ -353,13 +353,13 @@ body {
       width:100%;
       height:100%;
      
-      border:1px solid #fbfbfb;
+      border:1px solid var(--night-text-color);
     }
     
     .stairs-classroom2{
       height: 61%;
       width: 72.5%;
-      border:1px solid #fbfbfb;
+      border:1px solid var(--night-text-color);
       margin-left: 27.5%;
     }
     
@@ -367,33 +367,25 @@ body {
       margin-top: 15%;
       height: 45%;
       width: 45%;
-      border:1px solid #fbfbfb;
+      border:1px solid var(--night-text-color);
       display: flex;
       flex-direction: row;
-      border:1px  solid #fbfbfb;
+      border:1px  solid var(--night-text-color);
       margin-bottom: 1px;
       margin-left: 55%;
     }
     .stairs-step1a{
-      border-top:5px  solid #fbfbfb;
+      border-top:5px  solid var(--night-text-color);
       height: 50%;
       margin-top: 47%;
       width: 65%;
     }
     .stairs-step2b{
       width: 35%;
-      border-left:1px  solid #fbfbfb;
+      border-left:1px  solid var(--night-text-color);
     }
     
-    .blank{
-      width: 100%;
-      height: 100%;
-      background-color: rgb(153, 204, 153);
-      cursor: pointer;
-    }
-   .blank:hover{
-      background-color: rgb(95, 204, 95);
-    }
+    
     ::-webkit-scrollbar {
       width: 0.1em;
     }
@@ -413,16 +405,19 @@ body {
 .green{
   width:100%;
   height:100%;
-  background-color: #00a669;
+  background-color: #30c04f;
 }
 
 .red{
   width:100%;
   height:100%;
-  background-color:rgb(247, 62, 62);
+  background-color: #dc2626;
 }
 .gray{
   width:100%;
   height:100%;
   background-color:gray;
+}
+button{
+  color: var(--night-text-color);
 }

@@ -1,14 +1,15 @@
-
 :root {
-  --dark-color: #171717;
-  --light-color: #fafafa;
-}
+  --day-background-color: #fbfbfb;
+  --day-text-color: #181818; 
+  --night-background-color: #181818; 
+  --night-text-color: #fbfbfb;
+ }
 
 @media (max-width: 767px) {
 .navbarBottom {
-  background-color: var(--light-color);
+  background-color: var(--day-background-color);
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-  color: var(--dark-color);
+  color: var(--day-text-color);
   height: 72px;
   position: fixed;
   bottom: 0;
@@ -37,15 +38,15 @@
   margin: 6px;
 }
 .radio-input:checked + .radio-tile .radio-label {
-  color: #00a669;
+  color: #30c04f;
 }
 
 .radio-tile:hover{ 
-  border-color: #00a669;
+  border-color: #30c04f;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #89d7b3;
 }
 .radio-input:focus + .radio-tile {
-  border-color: #00a669;
+  border-color: #30c04f;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #89d7b3;
 }
 
@@ -108,9 +109,9 @@
   /* Desktop Layout */
   @media (min-width: 768px) {
     .navbarBottom {
-      background-color:var(--light-color);
+      background-color:var(--day-background-color);
       box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-      color: var(--dark-color);
+      color: var(--day-text-color);
       height: 72px;
       position: fixed;
       bottom: 0;

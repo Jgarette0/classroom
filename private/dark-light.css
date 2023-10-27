@@ -1,0 +1,33 @@
+:root {
+ --day-background-color: #fbfbfb;
+ --day-text-color: #181818; 
+ --night-background-color: #181818; 
+ --night-text-color: #fbfbfb;
+}
+
+body {
+ background-color: var(--day-background-color);
+ color: var(--day-text-color);
+}
+.hello {
+ color: var(--day-text-color);
+}
+.mode-toggle {
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+}
+
+#mode-icon {
+ width: 24px;
+ height: 24px;
+ transition: 0.4s;
+}
+
+body.dark-mode #mode-icon {
+ opacity: 0;
+}
+
+body.dark-mode #mode-icon {
+ opacity: 1;
+}

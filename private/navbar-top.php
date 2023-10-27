@@ -6,7 +6,7 @@
       *A search input that search data through post method
       *Below the navbar is an Dialog - model, which popup when the avatar icon is clicked
       s-->
-   <nav>
+     <nav>
       <div class="navbar" id="navbar">
         <a>
           <div class="profile-holder">

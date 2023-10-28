@@ -9,15 +9,15 @@ function check_login_errors(){
 
 
     foreach($errors as $error){
-      echo '<div class="form-errors" style="display:flex; flex-direction:column; color:red;">'.$error.'</div>';
+      echo '<div class="form-errors" style="display:flex; flex-direction:column; color:#dc2626;">'.$error.'</div>';
     }
     unset($_SESSION['errors_login']);
   } else if (isset($_GET["login"]) && $_GET["login"] ==="success"){
     echo '<br>';
-    echo '<div class="form-success" style="color:green">logged in!</div>';
+    echo '<div class="form-success" style="color:#30c04f">logged in!</div>';
   }
 
 }
 function login_success() {
-  return '<div id="success-message" class="form-success" style="color:green">You have successfully logged in!</div>';
+  return '<div id="success-message" class="form-success" style="color:#30c04f">You have successfully logged in!</div>';
 }

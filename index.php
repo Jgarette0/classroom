@@ -24,5 +24,5 @@
 <script src="js/main.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/user.js"></script>
-<script src="js/dark-light-mode.js"></script>
+<script type="module" src="js/public-modes.js"></script>
 </html>

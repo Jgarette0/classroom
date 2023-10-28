@@ -10,8 +10,30 @@ require_once '../handler/login_view.inc.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login here</title>
   <link rel="stylesheet" href="../css/user.css">
+  <link rel="stylesheet" href="../css/navbar-top.css">
 </head>
 <body>
+<div class="fixed">
+        <div class="label-checkbox">
+          <label for="checkbox">
+            <input class="checkbox" type="checkbox" id="checkbox" style="display: none;">
+            <img src="../../images/icons/dark.svg" alt="Unchecked" class="dark-icon">
+            <img src="../../images/icons/light.svg" alt="Checked" class="light-icon">
+          </label>
+        </div>
+        <a href="../index.php">
+          <div class="profile-holder">
+            <button id="profileBtn">
+            <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/zxvuvcnc.json"
+                trigger="click"
+                colors="primary:#2949cf,secondary:#2949cf" style="width:25px;height:25px;">
+            </lord-icon>
+            </button>
+          </div>
+        </a>
+      </div>
   <div class="register-container">
       <div class="header-div">
         <div class="logo-container">
@@ -29,7 +51,7 @@ require_once '../handler/login_view.inc.php';
               action="../handler/register.inc.php" 
               method="post">
           <div class="inputs-container">
-            <div>
+            <div class="email-for">
               <label for="email">Enter your email</label>
               <?php 
              email_inputs();
@@ -44,7 +66,7 @@ require_once '../handler/login_view.inc.php';
             </lord-icon>
             <div class="password-viewer">
               <div>
-                <label for="password">Enter a password</label>
+                <label class="label-for" for="password">Enter a password</label>
                <?php
                password_inputs();
                ?>
@@ -74,7 +96,7 @@ require_once '../handler/login_view.inc.php';
               colors="primary:#24242b"
               style="width:24px;height:24px; margin-top:-45px; margin-left:2px">
             </lord-icon>
-            <div>
+            <div class="div-for">
               <button type="submit" class="submit">
                 Create account
               </button>
@@ -98,4 +120,5 @@ require_once '../handler/login_view.inc.php';
 </div>
 </body>
 <script src="../js/user.js"></script>
+<script src="../js/account.js"></script>
 </html>

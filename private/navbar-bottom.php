@@ -23,7 +23,7 @@
 			<span class="radio-tile">
            <input class="radio-input" type="radio" name="engine">
            <a href="vacants/private-vacants.php">
-          <img src="images/icons/vacant-dark.svg"class="vacant" alt="">
+          <img src="images/icons/vacant-dark.svg"class="vacants" alt="">
               <span class="radio-label">Vacants</span>
              </a>
            </span>

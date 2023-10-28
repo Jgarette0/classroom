@@ -1,10 +1,12 @@
 :root {
-  --dark-color: #171717;
-  --light-color: #fafafa;
-}
+  --day-background-color: #fbfbfb;
+  --day-text-color: #181818; 
+  --night-background-color: #181818; 
+  --night-text-color: #fbfbfb;
+ }
 
 body{
-  background-color: var(--light-color);
+  background-color: var(--day-background-color);
   margin:none;
   padding:none;
   font-family:'Roboto', sans-serif;
@@ -12,6 +14,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--day-text-color);
 }
 .login-container{
   display: flex;
@@ -55,9 +58,9 @@ body{
   flex-direction: column;
   align-items: center;
   width: 310px;
-  height: 200px;
+  height: 220px;
   justify-content: center;
-  border: 1px solid var(--dark-color);
+  border: 1px solid var(--day-text-color);
   border-radius: 6px;
 }
 .login-input-container{
@@ -72,29 +75,35 @@ body{
 .password,
 .username{
   width: 78%;
-  margin-top:7px;
-  padding:9px;
+  margin-top:3px;
+  margin-bottom: 8px;
+  padding:11px;
   border-radius:5px;
-  border:1px solid var(--dark-color);
+  border:1px solid var(--day-text-color);
   margin-bottom: none;
   padding-left: 29px;
   padding-right:30px;
+  background-color: transparent;
+  color: var(--day-text-color);
 
 }
 .term
 .email:hover,
 .password:hover,
 .username:hover{
-  outline:1px solid var(--dark-color);
+  outline:1px solid var(--day-text-color);
+  background-color: transparent;
+  color: var(--day-text-color);
 
 }
 .submit{
   width: 100%;
-  padding:10px;
-  border-radius:4px;
+  padding:12px;
+  border-radius:6px;
   border:none;
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  background-color:  var(--night-background-color);
+  color: var(--night-text-color);
+  margin-top: 12px;
   
 }
 .login-terms-div{
@@ -104,7 +113,7 @@ body{
   width: 310px;
   margin-top: 14px;
   border-radius: 6px;
-  border:1px solid var(--dark-color);
+  border:1px solid var(--day-text-color);
   height: 60px;
   justify-content: center;
   
@@ -116,7 +125,7 @@ body{
 }
 
 .create-account{
-  color:var(--dark-color);
+  color:var(--day-text-color);
 }
 
 
@@ -153,7 +162,7 @@ body{
 .login-link-container a{
   margin-left: 5px;
   text-decoration: none;
-  color: var(--dark-color);
+  color: var(--day-text-color);
 }
 .login-link-container a:hover{
   text-decoration:underline;
@@ -168,9 +177,9 @@ body{
   flex-direction: column;
   align-items: center;
   width: 310px;
-  height: 274px;
+  height: 285px;
   justify-content: center;
-  border: 1px solid var(--dark-color);
+  border: 1px solid var(--day-text-color);
   border-radius: 6px;
 }
 
@@ -210,39 +219,55 @@ body{
   align-items: center;
 
 }
-              .password-div{
-                width: 100%;
-                margin-right: -2px;
-              }
-              .password-inputs{
-                display: flex;
-                flex-direction: row;
-                align-items:center;
-             
-              }
-              .terms-container-div{
-                width: 305px;
-                display: flex;
-                flex-direction: row;
-                box-sizing: border-box;
-                font-size: 12px;
-                justify-content: space-between;
-                align-items: center;
-                height: 120px;
-                margin: 0 auto;
-              }
-              .terms-container-div a{
-                text-decoration:none ;
-              }
-              .terms-container-div a:hover{
-                text-decoration: underline;
-              }
-              
-              .terms-container-div p{
-                width: 305px;
-                text-align: justify;
-              }
-              
+.password-div{
+  width: 100%;
+  margin-right: -2px;
+}
+.password-inputs{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+
+}
+.terms-container-div{
+  width: 305px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  font-size: 12px;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  margin: 0 auto;
+}
+.terms-container-div a{
+  text-decoration:none ;
+}
+.terms-container-div a:hover{
+  text-decoration: underline;
+}
+
+.terms-container-div p{
+  width: 305px;
+  text-align: justify;
+}
+
+.password-viewer{
+  margin-top: 20px;
+}
+.div-for button{
+
+ margin-bottom: -20px;
+}      
+.email-for{
+  margin-top: -10px;
+}    
+
+input{
+  background-color: var(--day-background-color);
+  color: var(--day-text-color);
+}
+
 @media (max-width: 768px) {
   .login-container{
     margin-top: 100px;
@@ -260,5 +285,18 @@ body{
 }
 input, label {
   padding: 2% 3%;
+}
+
+input{
+  background-color: var(--day-background-color);
+  color: var(--day-text-color);
+}
+.fixed{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  right: 5%;
+  top: 2%;
 }
 

@@ -31,12 +31,12 @@ function check_register_errors(){
 
 
     foreach($errors as $error){
-      echo '<div class="form-errors" style="display:flex; flex-direction:column; color:red;">'.$error.'</div>';
+      echo '<div class="form-errors" style="display:flex; flex-direction:column; color:#dc2626;">'.$error.'</div>';
     }
     unset($_SESSION['errors_register']);
   } else if (isset($_GET["register"]) && $_GET["register"] ==="success"){
     echo '<br>';
-    echo '<div class="form-success" style="color:green">Registration successful. Continue to login.</div>';
+    echo '<div class="form-success" style="color:30c04f">Registration successful. Continue to login.</div>';
   }
  
 

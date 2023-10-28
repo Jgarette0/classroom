@@ -91,19 +91,17 @@ body {
       .side-alley{
         width: 25px;
         border: 1px solid var(--night-text-color);
-        height:237.5px;
+        height:236px;
       }
       /*this is the classroom layout */
       .side-classroom{
-        height: 75px;
+        height: 76px;
         width: 105px;
-        border:1px solid var(--night-text-color);
         
       }
       .stairs-classroom{
         height: 108px;
-        width: 79px;
-        border:1px solid var(--night-text-color);
+        width: 80px;
         
       }
       .stairs-side{
@@ -144,7 +142,6 @@ body {
       }
       .main-classrooms1{
         width: 100%;
-        border: 1px var(--night-text-color) solid;
         height: 100%;
         margin-right: 48px;
         display: flex;
@@ -152,7 +149,6 @@ body {
       }
       .main-classrooms2{
         width: 100%;
-        border: 1px var(--night-text-color) solid;
         height: 100%;
         margin-left: 48px;
         display: flex;
@@ -161,13 +157,11 @@ body {
         width:100%;
         height:100%;
        
-        border:1px solid var(--night-text-color);
       }
       
       .stairs-classroom2{
         height: 108px;
-        width: 79px;
-        border:1px solid var(--night-text-color);
+        width: 80px;
         margin-left: 30px;
       }
       

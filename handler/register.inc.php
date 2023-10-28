@@ -43,7 +43,7 @@ if($errors){
 create_user($pdo,$username, $password,$email);
 
 
-header("Location: ../auth/register.php?register=success");
+header("Location: ../account/register.php?register=success");
 
 $pdo = null;
 $stmt = null;

@@ -183,6 +183,7 @@ body{
   height: 150px;
   width: 250px;
   background-color: var(--day-background-color);
+  color: var(--day-text-color);
   border-radius: 20px;
   border: none;
   outline: none;
@@ -195,7 +196,8 @@ body{
       box-sizing: border-box;
       overflow:hidden;
       margin: none;
-      
+      background-color: var(--day-background-color);
+      color: var(--day-text-color);
     }
     .display-close{
       height:10px;
@@ -205,7 +207,7 @@ body{
       justify-content: flex-end;
       margin-bottom:10px;
       cursor:pointer;
-      
+      color: var(--day-text-color);
     }
     .display-header{
       height:65px;
@@ -216,6 +218,8 @@ body{
       align-items: center;
       text-align: center;
       font-size: 20px;
+      color: var(--day-text-color);
+
     }
     .display-buttons{
       height:65px;
@@ -224,20 +228,23 @@ body{
       flex-direction:row;
       align-items: center;
       justify-content: space-evenly;
+      color: var(--night-text-color);
+   
   
     }
     .display-buttons button{
       font-size: 15px;
       border: 1px solid var(--night-background-color);
+      color: var(--night-text-color);
       border-radius:20px;
       padding: 12px 35px;
       outline:none;
       cursor: pointer;
       background-color:var(--night-background-color);
-      color:#fbfbfb;
+
     }
     .display-buttons button:hover{
-      background-color: #fbfbfb;
+      background-color: var(--day-background-color);
       color:var(--day-text-color);
     }
   

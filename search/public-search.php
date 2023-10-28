@@ -12,11 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/navbar-top.css">
 <link rel="stylesheet" href="../css/navbar.css">
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/responsive.css">
 <link rel="stylesheet" href="../css/navbar-bottom.css">
 <link rel="stylesheet" href="../css/map.css">
+<link rel="stylesheet" href="../css/private-search.css">
 </head>
 <body>
       <nav>
@@ -28,7 +30,7 @@
             <lord-icon
                 src="https://cdn.lordicon.com/zxvuvcnc.json"
                 trigger="click"
-                style="width:25px;height:25px;">
+                colors="primary:#30c04f,secondary:#30c04f" style="width:25px;height:25px;">
             </lord-icon>
             </button>
           </div>
@@ -38,7 +40,7 @@
             <a>
               <button type="submit" class="submits">
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="click" colors="primary:#121331,secondary:#242424" style="width:30px;height:30px;">
+                <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="click" colors="primary:#30c04f,secondary:#30c04f" style="width:30px;height:30px;">
                 </lord-icon>
               </button>
               </a>
@@ -46,6 +48,13 @@
                 <input id="search" type="text" name="usersearch" placeholder="Search...">
             </a>
           </form>
+        </div>
+        <div class="label-checkbox">
+        <label for="checkbox">
+          <input class="checkbox" type="checkbox" id="checkbox" style="display: none;">
+          <img src="../../images/icons/dark.svg" alt="Unchecked" class="dark-icon">
+          <img src="../../images/icons/light.svg" alt="Checked" class="light-icon">
+        </label>
         </div>
       </div>
     </nav>
@@ -128,7 +137,6 @@
        }
      
 
-
        ?>
        </section>
 
@@ -138,7 +146,7 @@
     text-align: center;
       font-size: 18px;
       padding: 20px;
-      background-color: #f8f8f8;
+      background-color: transparent;
       border: 1px solid red;
       border-radius: 5px;
     margin-top: 50px;
@@ -240,4 +248,5 @@
       inputText.value = text;
     }
   </script>
+  <script type="module" src="../js/vacant-mode.js"></script>
 </html>

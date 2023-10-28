@@ -8,7 +8,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="../css/navbar.css">
+      <link rel="stylesheet" href="../css/navbar-top.css">
       <link rel="stylesheet" href="../css/main.css">
       <link rel="stylesheet" href="../css/responsive.css">
       <link rel="stylesheet" href="../css/navbar-bottom.css">
@@ -90,11 +90,12 @@
             echo '</div>';
             echo '</div>';
             include '../includes/navagation-for-log.php';
+            include '../includes/map-for-log.php';
           }
         ?>
       </section>
 
-
+      <script type="module" src="../js/log-modes.js"></script>
 
     </body>
   </html>

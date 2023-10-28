@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/private-search.css">
+<link rel="stylesheet" href="../css/navbar-top.css">
 <link rel="stylesheet" href="../css/navbar.css">
 <link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/responsive.css">
@@ -60,7 +61,7 @@
         foreach($results as $row){
            
           echo '<div class="div1" id="modal1">';
-          echo '<div class="diva"><img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>';
+          echo '<div class="diva"><img src="../images/classroom/classroom'. htmlspecialchars($row["c_id"]). '.jpg" alt="example" class="img1"></div>';
           echo '<div class="divb">';
           echo '<div class="classroom-name">' . htmlspecialchars($row["classroomName"]) . '</div>';
           echo '<div>';
@@ -103,5 +104,6 @@
     </div>
   </section>
 <script src="../js/private-search.js" ></script>
+<script type="module" src="../js/vacant-mode.js"></script>
 </body>
 </html>

@@ -1,10 +1,15 @@
-
+:root {
+  --day-background-color: #fbfbfb;
+  --day-text-color: #181818; 
+  --night-background-color: #181818; 
+  --night-text-color: #fbfbfb;
+ }
   p{
     color: red;
     text-align: center;
       font-size: 18px;
       padding: 20px;
-      background-color: #f8f8f8;
+      background-color: var( --day-background-color);
       border: 1px solid red;
       border-radius: 5px;
     margin-top: 50px;
@@ -14,12 +19,15 @@
     bottom: 3%;
   left: 87%;
   transform: translateX(-50%);
-  color: var(--light-color);
+  color: var(--night-text-color);
   padding: 5px;
   border-radius: 25%;
   z-index: 1; 
   cursor: pointer;
 
+}
+input{
+  color: var(--day-text-color);
 }
   .classroom-btn{
     display: flex;
@@ -41,11 +49,13 @@
     border-radius: 30px;
     margin:2px 10px;
     cursor: pointer;
+    background-color: var(--day-background-color);
+    color: var(--day-text-color);
   }
   .cbutton:hover{
     transition:ease .3s;
-    background-color: #181818;
-    color: #fbfbfb;
+    background-color: var(--night-background-color);
+    color: var(--night-text-color);
   }
   section{
     display: flex;
@@ -82,9 +92,11 @@
     font-size: 15px;
     padding: 12px 15px;
     border-radius: 25px;
+    background-color: var(--day-background-color);
+    color: var(--day-text-color);
 
   }
-}
+  }
 
 /* Desktop Layout */
 @media (min-width: 768px) {

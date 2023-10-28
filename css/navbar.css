@@ -1,14 +1,16 @@
-
 :root {
-  --dark-color: #171717;
-  --light-color: #fafafa;
-}
+  --day-background-color: #fbfbfb;
+  --day-text-color: #181818; 
+  --night-background-color: #181818; 
+  --night-text-color: #fbfbfb;
+ }
+
 
 body{
   margin: 0;
   font-family:Arial, Helvetica, sans-serif;
   height: 2000px;
-  background-color: var(--light-color);
+  background-color: var( --day-background-color);
 }
 
 .navbar {
@@ -21,7 +23,7 @@ body{
   flex-direction: row-reverse;
   align-items: center;
   justify-content: flex-start;
-  background-color:var(--light-color);
+  background-color: var( --day-background-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 300;
 
@@ -30,7 +32,7 @@ body{
 .navbar a {
   float: right;
   display: block;
-  color: white;
+  color: var(--night-text-color);
   text-align: center;
   padding: 8px 4px;
   text-decoration: none;
@@ -51,7 +53,7 @@ body{
 
 .account-list{
   margin: auto;
-  color: var(--dark-color);
+  color: var(--night-text-color);
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -59,7 +61,7 @@ body{
 }
 
 #theDialog{
-  background-color: var(--dark-color);
+  background-color: var( --night-background-color);
   z-index: 100;
   max-width: 80%;
   margin-left: auto;
@@ -71,8 +73,8 @@ body{
 }
 
 .account-list button{
-  background-color: var(--dark-color);
-  color: #E5E1E1;
+  background-color: var( --night-background-color);
+  color: var(--night-text-color);
   border-radius: 5px;
   border:none;
   font-family: 'Roboto', sans-serif;;
@@ -82,14 +84,14 @@ body{
   cursor: pointer;
 }
 .account-list button:hover{
-  background-color: var(--light-color);
+  background-color: var( --day-background-color);
   transition: ease .3s;
-  color: var(--dark-color);
+  color: var(--day-text-color);
 }
 .account-list button:active{
-  background-color:var(--light-color);
+  background-color: var( --day-background-color);
   transition: ease .3s;
-  color: var(--dark-color);
+  color: var(--day-text-color);
 }
 #acc1{
   padding-right:22px ;
@@ -104,19 +106,16 @@ body{
   cursor: pointer;
   margin-left: -51px;
   position: absolute;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--day-text-color);
   height: 32px;
 }
 #search{
   padding: 8px 31px;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid var(--day-text-color);
   margin: none;
   background-color: transparent;
 }
-
-
-
 
 
 

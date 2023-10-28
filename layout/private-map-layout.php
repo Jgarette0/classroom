@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/navbar-top.css">
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/navbar-bottom.css">
   <link rel="stylesheet" href="../css/map.css">
@@ -342,5 +343,6 @@
   overflow-y: hidden;
 }
   </style>
+  <script type="module" src="../js/map-modes.js"></script>
   </body>
 </html>

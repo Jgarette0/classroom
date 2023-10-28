@@ -12,7 +12,7 @@
           <div class="profile-holder">
             <button id="profileBtn">
               <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-              <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="click"  colors="primary:#121331,secondary:#000000" style="width:36px;height:36px;margin-bottom:-5px;">
+              <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="click"  colors="primary:#30c04f,secondary:#30c04f" style="width:36px;height:36px;margin-bottom:-5px;">
               </lord-icon>
             </button>
           </div>
@@ -22,7 +22,7 @@
             <a>
               <button type="submit" class="submits">
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="click" colors="primary:#121331,secondary:#242424" style="width:30px;height:30px;">
+                <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="click" colors="primary:#30c04f,secondary:#30c04f" style="width:30px;height:30px;">
                 </lord-icon>
               </button>
               </a>
@@ -30,6 +30,13 @@
                 <input id="search" type="text" name="usersearch" placeholder="Search...">
             </a>
           </form>
+        </div>
+        <div class="label-checkbox">
+        <label for="checkbox">
+          <input class="checkbox" type="checkbox" id="checkbox" style="display: none;">
+          <img src="../../images/icons/dark.svg" alt="Unchecked" class="dark-icon">
+          <img src="../../images/icons/light.svg" alt="Checked" class="light-icon">
+        </label>
         </div>
       </div>
     </nav>
@@ -40,5 +47,6 @@
         </div>
       </dialog>
     </div>
+    
 
     

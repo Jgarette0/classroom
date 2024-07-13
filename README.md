@@ -1,3 +1,5 @@
+### Version 2.0
+
 ## Database Setup
 
 1. Create a database:
